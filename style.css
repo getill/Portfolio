@@ -1,0 +1,65 @@
+@font-face {
+  font-family: IntegralBoldOblique;
+  src: url(/Assets/fonts/IntegralCF-ExtraBoldOblique.woff2);
+}
+
+@font-face {
+  font-family: IntegralMedium;
+  src: url(/Assets/fonts/IntegralCF-Medium.woff2);
+}
+
+body {
+  background: #141414;
+  color: white;
+  overflow: hidden;
+  cursor: none;
+}
+
+h1 {
+  font-family: IntegralBoldOblique;
+  font-size: 20vw;
+  text-align: center;
+  margin: 150px 0 0 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li {
+  font-family: IntegralMedium;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.mouse {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 150px;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+#mouseMove1{
+  height: 15px;
+  width: 15px;
+  background:  #ff2400;
+}
+#mouseMove2{
+  height: 75px;
+  width: 75px;
+  background: white;
+  transition: 0.09s ease;
+}
+#mouseMove3{
+  height: 150px;
+  width: 150px;
+  background:  rgb(61, 61, 61);
+  transition: 0.12s ease;
+}

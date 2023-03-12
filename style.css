@@ -13,6 +13,7 @@ body {
   color: white;
   overflow-x: hidden;
   cursor: none;
+  font-family: IntegralMedium;
 }
 
 h1 {
@@ -29,7 +30,6 @@ ul {
 }
 
 li {
-  font-family: IntegralMedium;
   list-style-type: none;
 }
 
@@ -118,8 +118,89 @@ a:hover {
   justify-content: center;
   margin: auto;
   flex-direction: column;
-  font-family: IntegralMedium;
   text-align: center;
   width: 50vw;
+}
+
+.intro>p {
+  text-align: justify;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  margin: 50px 0;
   
+  display: flex;
+  flex-direction: row;
+  
+  transition: all 200ms ease-in-out;
+}
+
+.image-wrapper {
+  height: 300px;
+  width: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: all 200ms ease-in-out;
+}
+
+img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  object-position: top;
+  
+  transition: all 200ms ease-in-out;
+}
+
+.book-design-image {
+  object-position: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: 380px;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+  
+}
+
+.wrap-title {
+  position: relative;
+  bottom: 0;
+  height: 300px;
+  color: #fff;
+  font-size: 80px;
+  
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper:hover img {
+  transform: scale(2);
+  /*object-position: bottom;*/
+}
+
+.wrapper:hover h1 {
+  bottom: 300px;
+  transform: scale(.4);
+}
+
+.wrapper:hover .image-wrapper {
+  width: 800px;
+}
+
+.art-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

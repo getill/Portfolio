@@ -1,3 +1,5 @@
+/*-------------------- PAGE ESSENTIALS ---------------------*/
+
 @font-face {
   font-family: IntegralBoldOblique;
   src: url(/Assets/fonts/IntegralCF-ExtraBoldOblique.woff2);
@@ -8,6 +10,10 @@
   src: url(/Assets/fonts/IntegralCF-Medium.woff2);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: #141414;
   color: white;
@@ -16,11 +22,17 @@ body {
   font-family: IntegralMedium;
 }
 
+header{
+  position: sticky;
+  padding: 2px;
+  background-color: #141414b7;
+  top: 0;
+}
+
 h1 {
   font-family: IntegralBoldOblique;
   font-size: 10vw;
   text-align: center;
-  margin: 150px 0 0 0;
 }
 
 ul {
@@ -43,13 +55,24 @@ a {
   cursor: none;
 }
 
+img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  object-position: top;
+  
+  transition: all 200ms ease-in-out;
+}
 
+/*-------------------- ACTIVE EVENT ---------------------*/
 
-a:hover {
+.btn:hover, .active {
   color: black;
   background: #ff2400;
   box-shadow: 0 0 10px #ff2400, 0 0 40px #ff2400, 0 0 80px #ff2400;
 }
+
+/*-------------------- MOUSE EVENT ---------------------*/
 
 .mouse {
   position: absolute;
@@ -57,6 +80,7 @@ a:hover {
   border-radius: 150px;
   pointer-events: none;
   mix-blend-mode: difference;
+  z-index: 50;
 }
 
 #mouseMove1{
@@ -77,40 +101,7 @@ a:hover {
   transition: 0.12s ease;
 }
 
-.musicContainer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-}
-
-.bio {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70vw;
-  margin-top: 150px;
-  text-align: justify;
-}
-
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  /* padding: 20px; */
-}
+/*-------------------- INTO SECTION ---------------------*/
 
 .intro  {
   display: flex;
@@ -120,12 +111,60 @@ a:hover {
   flex-direction: column;
   text-align: center;
   width: 50vw;
+  height: 90vh;
 }
 
 .intro>p {
   text-align: justify;
   width: 100%;
 }
+
+/*-------------------- MUSIC SECTION ---------------------*/
+
+.musicStuff {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.musicContainer{
+  margin-top: 100px;
+}
+
+#music{
+  margin-top: 100px;
+  height: 100vh;
+}
+
+.videoDiv{
+  z-index: -1;
+  width: 100vw; 
+  height: 100vh; 
+  position: relative;
+}
+
+.videoMessage{
+  position: absolute; top: 0; left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+}
+
+#myVideo {
+  height: 100vh;
+  margin: auto; 
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+/*-------------------- ARTWORK SECTION ---------------------*/
 
 .wrapper {
   position: relative;
@@ -145,15 +184,6 @@ a:hover {
   overflow: hidden;
   border-radius: 5px;
   cursor: pointer;
-
-  transition: all 200ms ease-in-out;
-}
-
-img {
-  height: 300px;
-  width: 450px;
-  object-fit: cover;
-  object-position: top;
   
   transition: all 200ms ease-in-out;
 }
@@ -171,7 +201,6 @@ img {
   left: 380px;
   transition: all 200ms ease-in-out;
   overflow: hidden;
-  
 }
 
 .wrap-title {
@@ -179,7 +208,7 @@ img {
   bottom: 0;
   height: 300px;
   color: #fff;
-  font-size: 80px;
+  font-size: 45px;
   
   transition: all 200ms ease-in-out;
 }
@@ -203,4 +232,15 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/*-------------------- BIO SECTION ---------------------*/
+
+.bio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  margin-top: 150px;
+  text-align: justify;
 }

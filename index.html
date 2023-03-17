@@ -15,25 +15,76 @@
   
   <header>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/music.html">Music</a></li>
-        <li><a href="/artworks.html">Artworks</a></li>
-        <li><a href="/webDesign.html">Web design</a></li>
-        <li><a href="/whoAmI.html">Who am I ?</a></li>
+      <ul class="btn-container">
+        <li><a href="#intro" class="active btn">Home</a></li>
+        <li><a href="#music" class="btn">Music</a></li>
+        <li><a href="/artworks.html" class="btn">Artworks</a></li>
+        <li><a href="/webDesign.html" class="btn">Web design</a></li>
+        <li><a href="/whoAmI.html" class="btn">Who am I ?</a></li>
       </ul>
     </nav>
   </header>
+
+  <!--- INTRO SECTION -->
   
-  <div class="intro">
+  <section class="intro" id="intro">
     <h1>GET ILL.</h1>
-    <br>
     <h2>Warning:</h2>
     <br>
-    <p>🔪 Every content in thi spage is made with love. Every kind of violence is made in artistic purpose only</p>
+    <p>🔪 Every content in this page is made with love. Every kind of violence is made in artistic purpose only</p>
     <p>🦻🏼 To prevent possible hearing damage, do not listen at high levels for long periods</p>
     <p>🧠 Everything you will hear / see from this step could affect your mental health and your reality perception</p>
+  </section>
+  
+  <!--- MUSIC SECTION -->
+
+  <section id="music">
+    
+    <div class="videoDiv">
+      <video autoplay muted loop id="myVideo">
+        <source src="/Assets/videos/GETILL_2_1.mp4" type="video/mp4">
+      </video>
+      <div class="videoMessage">
+        <h1>Music</h1>
+      </div>
+    </div>  
+  </section>
+
+  <div class="musicStuff">
+    <iframe class="musicContainer" width="50%" height="315" src="https://www.youtube.com/embed/uMPu8S52eQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe class="musicContainer" width="50%" height="300" scrolling="no" frameborder="no" 
+      allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1128420184&color=%23ff2400&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">     
+    </iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;
+      overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
+      font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma
+      ,sans-serif;font-weight: 100;">
+    </div>
+
+    <iframe class="musicContainer" width="50%" height="300" scrolling="no" frameborder="no" 
+      allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219966562&color=%23ff2400&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">     
+    </iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;
+      overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
+      font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma
+      ,sans-serif;font-weight: 100;">
+    </div>
+
+    <iframe class="musicContainer" width="50%" height="300" scrolling="no" frameborder="no" 
+      allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/726895369&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">     
+    </iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;
+      overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
+      font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma
+      ,sans-serif;font-weight: 100;">
+    </div>
   </div>
+
+  <section id="artworks">
+    <h1>ARTWORKS</h1>
+  </section>
+
 
 
   <script src="/index.js"></script>

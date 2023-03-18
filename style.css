@@ -222,13 +222,6 @@ section {
   width: 100vw;
 }
 
-/*-------------------- WEBDESIGN SECTION ---------------------*/
-
-#webdesign>a{
-  background: #ff2400;
-  color: #141414;
-}
-
 /*-------------------- BIO SECTION ---------------------*/
 
 #bio {
@@ -241,6 +234,9 @@ section {
 }
 
 #bio>p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 45vw;
   font-family: SourceCode;
-  font-weight: 700;
+  font-weight: 400;
 }
